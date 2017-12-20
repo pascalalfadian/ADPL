@@ -1,0 +1,9 @@
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.aux
+*.bbl
+*.blg
+*.pdf
