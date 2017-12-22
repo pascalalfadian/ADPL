@@ -64,6 +64,81 @@
 			\item Ambiguous, e.g. when comparing to last month, is it in terms of percentage or in dollars?
 		\end{itemize}
 	\end{frame}	
+
+	\section{Structured Analysis}
+	\subsection{Overview}
+	\begin{frame}{Structured Analysis}
+		\begin{columns}[t,totalwidth=\textwidth]
+			\column{.5\linewidth}
+				\begin{itemize}
+					\item A more formal way of specification
+					\item Use of graphics for specification was an important technique in 1970s (until today)
+					\item Several techniques become popular, but we will use \cite{gane1977structured} as suggested in main reference
+					\item That is, a nine-step technique (summary on the right, explained in detail later)
+				\end{itemize}
+			\column{.5\linewidth}
+			\begin{flushright}
+				\small{
+					\begin{enumerate}
+						\item Draw the \textbf{Data Flow Diagram} (DFD) of existing system
+						\item Decide what sections to computerize and how
+						\item Determine the details of the data flows
+						\item Define the logic of the process
+						\item Define the data source
+						\item Define the physical resources
+						\item Determine the input-output specifications
+						\item Perform the sizing
+						\item Determine the hardware requirements
+					\end{enumerate}
+				}
+			\end{flushright}
+		\end{columns}		
+	\end{frame}
+	\subsection{Case Study: Sally's Software Show}
+	\begin{frame}{Case Study: Sally's Software Show}
+		\begin{itemize}
+			\item Buys software from various suppliers and sells it to public
+			\item Monthly turnover of 300 packages
+			\item Average retail cost of \$250 each
+			\item Analysis:
+			\begin{itemize}
+				\item Which parts should be computerized?
+				\item What's the objective to computerize?
+				\item Assumption: Sally wishes to computerize ``to make more money''
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+	\subsection{Step 1: Draw The DFD}
+	\begin{frame}{Step 1: Draw The DFD}
+		\begin{center}
+			\includegraphics[scale=0.5]{img/01_dfd_symbols}
+		\end{center}	
+		\begin{itemize}
+			\item A pictorial representation of all aspects of the logical data flow
+			\item Constructed by identifying the \textbf{data flows}
+			\item Each flow of data starts and ends either at
+			\begin{itemize}
+				\item \textbf{Source or destination of data} (double-square box) or
+				\item \textbf{Data store} (open-ended rectangle)
+			\end{itemize}
+			\item Data are transformed by one or more \textbf{process}es (rounded rectangle)
+		\end{itemize}
+	\end{frame}
+	\begin{frame}{Step 1: Draw The DFD}
+		\begin{columns}[t,totalwidth=\textwidth]
+			\column{.5\linewidth}
+				\begin{itemize}
+					\item DFD is generally large, therefore need to be developed in stepwise refinement
+					\item Above is example for Sally's Software Shop, first refinement
+					\item That diagram can have many intepretations
+					\item See two possible implementation in next slide
+				\end{itemize}			
+			\column{.5\linewidth}
+				\begin{flushright}
+					\includegraphics[scale=0.5]{img/01_sally_dfd_first_refinement}
+				\end{flushright}
+		\end{columns}		
+	\end{frame}
 	
 	\section{References}
 	\begin{frame}[allowframebreaks]
