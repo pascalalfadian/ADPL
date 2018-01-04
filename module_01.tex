@@ -129,15 +129,42 @@
 			\column{.5\linewidth}
 				\begin{itemize}
 					\item DFD is generally large, therefore need to be developed in stepwise refinement
-					\item Above is example for Sally's Software Shop, first refinement
+					\item On the right is example for Sally's Software Shop, first refinement
 					\item That diagram can have many intepretations
-					\item See two possible implementation in next slide
+					\item See two possible implementation (among others) in next slide
 				\end{itemize}			
 			\column{.5\linewidth}
 				\begin{flushright}
 					\includegraphics[scale=0.5]{img/01_sally_dfd_first_refinement}
 				\end{flushright}
 		\end{columns}		
+	\end{frame}
+	\begin{frame}{Step 1: Draw The DFD}
+		\begin{columns}[t,totalwidth=\textwidth]
+			\column{.5\linewidth}
+				Implementation 1: Manual
+				\begin{itemize}
+					\item PACKAGE\_DATA: physical CDs
+					\item CUSTOMER\_DATA: small cards, like \textit{kartu berobat} (patient card)
+					\item process\_order: taking note of the purchase in the card
+				\end{itemize}
+			\column{.5\linewidth}
+				Implementation 2: Computerized
+					\begin{itemize}
+						\item PACKAGE\_DATA: computer file
+						\item CUSTOMER\_DATA: computer file
+						\item process\_order: entering input to the computerized system
+					\end{itemize}
+		\end{columns}
+	\end{frame}
+	\begin{frame}{Step 1: Draw The DFD}
+		\begin{center}
+			\includegraphics[scale=0.3]{img/01_sally_dfd_second_refinement}
+		\end{center}	
+		\begin{itemize}
+			\item Second refinement of DFD, if an item requested is not available
+			\item Notice that the DFD can't capture branching (\textit{if} statements)
+		\end{itemize}
 	\end{frame}
 	
 	\section{References}
