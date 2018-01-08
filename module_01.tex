@@ -166,6 +166,54 @@
 			\item Notice that the DFD can't capture branching (\textit{if} statements)
 		\end{itemize}
 	\end{frame}
+	\begin{frame}{Step 1: Draw The DFD}
+		\begin{columns}[t,totalwidth=\textwidth]
+			\column{.5\linewidth}
+				\begin{itemize}
+					\item Third refinement of DFD, focuses on financial functions
+					\item DFD becomes large, and some other details omitted.
+				\end{itemize}
+			\column{.5\linewidth}
+				\begin{flushright}
+					\includegraphics[scale=0.3]{img/01_sally_dfd_third_refinement}
+				\end{flushright}
+		\end{columns}
+	\end{frame}
+	\begin{frame}{Step 1: Draw The DFD}
+		\begin{itemize}
+			\item 1st, 2nd, etc... refinements sometimes known as DFD level 1, 2, etc... %locally known in IF-UNPAR%
+			\item The more refinements, the larger the diagram. Hence can be divided hierarchically.
+			\item A single box (process) at one level is expanded into a complete DFD at lower level.
+		\end{itemize}
+	\end{frame}
+
+	\subsection{Step 2: Decide What Sections to Computerize and How}
+	\begin{frame}{Step 2: Decide What Sections to Computerize and How}
+		\begin{itemize}
+			\item Ideally all operations are computerized, but cost may prohibit.
+			\item For computerized operations, further question is whether to do it in batch or online
+			\begin{itemize}
+				\item Batch processes bulk of data (e.g. ``Upload CSV file'')
+				\item Online process operation in time.
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+
+	\subsection{Step 3: Determine Details of Data Flows}
+	\begin{frame}[fragile]{Step 3: Determine Details of Data Flows}
+		\begin{itemize}
+			\item Identify what data items must go into various data flows.
+			\item Example:
+\begin{verbatim}
+order:
+    order_identification
+    customer_details
+    package_details
+\end{verbatim}
+			\item In case of larger product, data dictionary keeps track of all data elements.
+			\item Example of data dictionary in next slide.
+		\end{itemize}
+	\end{frame}
 	
 	\section{References}
 	\begin{frame}[allowframebreaks]
