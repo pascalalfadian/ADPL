@@ -1,6 +1,7 @@
 \documentclass{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+
 \usepackage{qtree}
 \usepackage{dirtree}
 
@@ -122,19 +123,22 @@
 	\end{frame}
 	\subsection{Step 1: Draw The DFD}
 	\begin{frame}{Step 1: Draw The DFD}
-		\begin{center}
-			\includegraphics[scale=0.5]{img/01_dfd_symbols}
-		\end{center}	
-		\begin{itemize}
-			\item A pictorial representation of all aspects of the logical data flow
-			\item Constructed by identifying the \textbf{data flows}
-			\item Each flow of data starts and ends either at
-			\begin{itemize}
-				\item \textbf{Source or destination of data} (double-square box) or
-				\item \textbf{Data store} (open-ended rectangle)
-			\end{itemize}
-			\item Data are transformed by one or more \textbf{process}es (rounded rectangle)
-		\end{itemize}
+	    \begin{small}
+    		\begin{center}
+    			\includegraphics[scale=0.4]{img/01_dfd_symbols}
+    		\end{center}	
+    		\begin{itemize}
+    			\item A pictorial representation of all aspects of the logical data flow
+    			\item Constructed by identifying the \textbf{data flows}
+    			\item Each flow of data starts and ends either at
+    			\begin{itemize}
+    				\item \textbf{Source or destination of data} (double-square box) or
+    				\item \textbf{Data store} (open-ended rectangle)
+    			\end{itemize}
+    			\item Data are transformed by one or more \textbf{process}es (rounded rectangle)
+    			\item Note diagrams in this presentation uses open source application ``Dia''.
+    		\end{itemize}
+		\end{small}
 	\end{frame}
 	\begin{frame}{Step 1: Draw The DFD}
 		\begin{columns}[t,totalwidth=\textwidth]
@@ -149,7 +153,7 @@
 				\begin{flushright}
 					\includegraphics[scale=0.5]{img/01_sally_dfd_first_refinement}
 				\end{flushright}
-		\end{columns}		
+		\end{columns}
 	\end{frame}
 	\begin{frame}{Step 1: Draw The DFD}
 		\begin{columns}[t,totalwidth=\textwidth]

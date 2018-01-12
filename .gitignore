@@ -6,5 +6,8 @@
 *.aux
 *.bbl
 *.blg
+*.vrb
 *.pdf
 *.*~
+/img/*.vpp.lck
+/img/*.vpp.bak*
