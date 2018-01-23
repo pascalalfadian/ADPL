@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<!DOCTYPE qfsmproject SYSTEM 'qfsm.dtd'>
+<qfsmproject version="0.54" author="Qfsm">
+  <machine nummooreout="0" transfontitalic="0" draw_it="1" statefontsize="8" transfont="Helvetica" statefontitalic="0" author="" description="" version="" name="03_safe_fsm" arrowtype="1" numbits="3" statefontweight="50" statefont="Helvetica" numin="0" transfontsize="8" transfontweight="50" type="2" numout="0" initialstate="2">
+    <outputnames_moore></outputnames_moore>
+    <inputnames></inputnames>
+    <outputnames></outputnames>
+    <itransition ypos="243" endx="171" xpos="140" endy="243"/>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="234" code="5" xpos="362" linewidth="1">A</state>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="237" code="1" xpos="498" linewidth="1">B</state>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="243" code="2" xpos="211" linewidth="1">Safe Locked</state>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="0" entry_actions="" moore_outputs="" ypos="380" code="3" xpos="432" linewidth="1">Sound Alarm</state>
+    <state pencolor="0" exit_actions="" radius="40" description="" finalstate="1" entry_actions="" moore_outputs="" ypos="245" code="4" xpos="644" linewidth="1">Safe Unlocked</state>
+    <transition c1x="420.6938881429066" c2y="234.3555813021654" c1y="234.7790225597201" description="" straight="1" type="2" ypos="235.202463817275" endx="458.1178205799367" xpos="401.9819219243916" endy="233.9321400446105" c2x="439.4058543614217">
+      <from>5</from>
+      <to>1</to>
+      <inputs default="0" any="0" invert="0">3R</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="374.3291161024989" c2y="338.5703933346347" c1y="306.2299712935262" description="" straight="1" type="2" ypos="273.8895492524177" endx="393.0463516103283" xpos="364.9704983485843" endy="370.9108153757433" c2x="383.6877338564136">
+      <from>5</from>
+      <to>3</to>
+      <inputs default="0" any="0" invert="0">Any other dial movement</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="457.6644906125042" c2y="314.7285632228766" c1y="289.1831506186683" description="" straight="1" type="2" ypos="263.6377380144599" endx="436.6736499026959" xpos="468.1599109674083" endy="340.2739758270849" c2x="447.1690702576001">
+      <from>1</from>
+      <to>3</to>
+      <inputs default="0" any="0" invert="0">Any other dial movement</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="560.0715477033747" c2y="239.7536524210958" c1y="238.9245658851853" description="" straight="1" type="2" ypos="238.0954793492749" endx="604.2446506130552" xpos="537.9849962485345" endy="240.5827389570061" c2x="582.158099158215">
+      <from>1</from>
+      <to>4</to>
+      <inputs default="0" any="0" invert="0">2L</inputs>
+      <outputs></outputs>
+    </transition>
+    <transition c1x="274.735213276572" c2y="240.3744812250923" c1y="239.5935449221853" description="" straight="1" type="2" ypos="238.8126086192783" endx="322.6452035960037" xpos="250.7802181168563" endy="241.1554175279993" c2x="298.6902084362879">
+      <from>2</from>
+      <to>5</to>
+      <inputs default="0" any="0" invert="0">1L</inputs>
+      <outputs></outputs>
+    </transition>
+  </machine>
+</qfsmproject>
